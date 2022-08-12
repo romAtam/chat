@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="chat">
+      <div class="users">
+        <h1 class="room"></h1>
+      </div>
+      <div class="posts">
+        <ul class="posts-list"></ul>
+      </div>
+      <div class="message">
+        <input
+          placeholder="enter your message"
+          type="text"
+          name="message"
+          id="message"
+          required
+          autocomplete="off"
+        />
+        <button id="send" type="button" class="btn">send</button>
+        <button class="location">location</button>
+      </div>
+      <i class="fa-thin fa-alarm-clock"></i>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../js/chat.js"></script>
+  </body>
+</html>
